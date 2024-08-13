@@ -10,3 +10,11 @@ for(let i=0; i<16; i++){
         colBox.appendChild(box);
     }
 }
+
+let boxes = document.querySelectorAll(".box");
+
+for(let i=0; i<boxes.length; i++){
+    boxes[i].addEventListener("mouseover", function() {
+        boxes[i].classList.add("covered");
+    });
+}
